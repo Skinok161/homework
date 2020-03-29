@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            //Задача 1
+let a=prompt("Введите кол-во часов","");
+let drinkingWaterPerHour = function(hours){
+    let result=hours/2;
+    result=Math.floor(result)
+return result;
+}
+console.log (drinkingWaterPerHour(a))
+            //Задача 2
+let b=prompt("Введите строку","");
+let str = function(sourceString){
+       let result2=b.substring(1,b.length - 1);
+return result2;
+}
+console.log (str(b))
+//Доделать, если исходная строка из 2 символов - вернуть исходную.
+            //Задача 3
+let c=+prompt ("Ведите число n","");
+let d=prompt ("Введите исходную строку","");
+let strng = function(){
+    let result3=d.repeat(c);
+return result3;
+}
+console.log (strng())
+            //Задача 4
+let value = function(data){
+    if (data){
+      return "Yes"
+    }else{
+        return "no"
+    }
+}
+let r=value(false);
+console.log(r)
+            //Задача 5
+let i=+prompt ("Введите число","");
+let qwe = function(){
+    let sum=0;
+    for (let value=0; value<=i; value++){
+        sum+=value;
+    }
+    return sum;
+}
+console.log(qwe())
+            //Задача 6
+let op=prompt ("Введите операцию","");
+let frstvalue=+prompt ("Введите первое значение","");
+let scndvalue=+prompt ("Введите второе значение","");
+let fu = function(){
+    let res=0;
+    switch(op){
+        case "+":
+        res+=(frstvalue+scndvalue);
+        break;
+        case "-":
+        res+=(frstvalue-scndvalue);
+        break;
+        case "/":
+        res+=(frstvalue/scndvalue);
+        break;
+        case "*":
+        res+=(frstvalue*scndvalue);
+        break;
+    }
+    return res;
+}
+console.log(fu())
+</script>
+</head>
+<body>
+    
+</body>
+</html>

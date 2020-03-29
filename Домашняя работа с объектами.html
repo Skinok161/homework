@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                //Задача 1
+let i=+prompt ("Введите число","");
+let qwe = function(){
+    let sum=0;
+    for (let value=0; value<=i; value++){
+        sum+=value;
+    }
+    return sum/i;
+}
+console.log(qwe())
+                //Задача 2
+let a = function(startSalary, bonus){
+    if (bonus){
+        return startSalary*10;
+    }else {
+        return startSalary;
+    }
+}
+console.log(a(20, true))
+                //Задача 3
+let b = function(firstNum, secondNum){
+    let res = firstNum*secondNum;
+    return res
+}
+console.log(b(7,9))
+                //Задача 4
+let c = function(num){
+    if (num%2!==0){
+      return "Odd"
+    }else{
+        return "Even"
+    }
+}
+console.log(c(22))
+                //Задача 5
+let op=prompt ("Введите операцию","");
+let frstNum=+prompt ("Введите первое значение","");
+let scndNum=+prompt ("Введите второе значение","");
+let mathOperation = function(){
+    let res=0;
+    switch(op){
+        case "add":
+        res+=(frstNum+scndNum);
+        break;
+        case "subtract":
+        res+=(frstNum-scndNum);
+        break;
+        case "divide":
+        res+=(frstNum/scndNum);
+        break;
+        case "multiply":
+        res+=(frstNum*scndNum);
+        break;
+    }
+    return res;
+}
+console.log(mathOperation())
+                //Задача 6
+let phrase = prompt("Фраза рефери:","");
+let findScore = function(){
+const nums = {
+nil: 0,
+one: 1,
+two: 2,
+three: 3,
+four: 4,
+five: 5,
+six: 6,
+seven: 7,
+eight: 8,
+nine: 9
+};
+}
+for (let key in nums) {
+    if (nums.hasOwnProperty(key) && phrase.includes(key)) {
+        score.push(nums[key]);
+    }
+}
+return score.join(', ');
+let score = [];
+alert(findScore());
+                                                        //Метод split
+                //Задача 7
+const strCount1 = { 
+first: "1", 
+second: "2", 
+third: false, 
+fourth: "4", 
+fifth:  null 
+}
+const strCount2 = { 
+first: "1", 
+second: 2, 
+third: false, 
+fourth: "4", 
+fifth:  null 
+}
+let strng = function (strCount){
+let count = 0;
+for (let key in strCount){
+    if (typeof strCount[key] =="string"){
+        count++;
+    }
+}
+return count
+}
+console.log (strng(strCount1))
+console.log (strng(strCount2))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

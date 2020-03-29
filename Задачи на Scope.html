@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Задача 1
+        Global Scope
+            isTempAutoSavedFlowBlockValid Scope
+                {blockType, statement, type} = block
+            shouldLoadAutoSavedFlow Scope
+                {nextAction, nextBlockForTrue, nextBlockForFalse} = parsedFlowBlock
+
+        //Задача 2
+        let age=prompt("Введите возраст","");
+        let checkAge = (age >= 18) ? "true" : "false";
+        alert (checkAge)
+
+        //Задача 3
+        let a=+prompt("введите a","");
+        let b=+prompt("введите b","");
+        let min = function() {
+            if (a<b){
+                return a
+            }else{
+                return b
+            }
+        }
+        console.log (min())
+
+        //Задача 3
+        let factorial = function(n) {
+            if (n==1){
+                return 1
+            }else {
+                return n*factorial(n-1)
+            }
+        }
+        console.log (factorial(5))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
